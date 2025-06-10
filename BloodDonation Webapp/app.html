@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloodAid Dashboard</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <script src="scripts/sidebar.js" defer></script>
+    <script>
+        // Fetch user data from Flask backend
+        fetch("http://127.0.0.1:5000/get_user")
+          .then(response => response.json())
+          .then(data => {
+            if (data.user) {
+              console.log("User logged in:", data.user);
+            } else {
+              window.location.href = "http://127.0.0.1:5500/app.html"; // ✅ Redirect to home if not logged in
+            }
+          });
+      </script>
+      
+</head>
+<body>
+    
+    <div id="sidebar-container"></div> 
+
+    
+    <main class="content">
+        <h1>Welcome to BloodAid</h1>
+        <p>Select an option to proceed.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>👤 My Profile</h3>
+                <p>Update your details</p>
+                <a href="profile.html">Go to Profile →</a>
+            </div>
+
+            <div class="card">
+                <h3>🔍 Find Donors</h3>
+                <p>Search for nearby blood donors</p>
+                <a href="donors.html">Find Donors →</a>
+            </div>
+
+            <div class="card">
+                <h3>🚨 Emergency Alert</h3>
+                <p>Send an urgent blood request</p>
+                <a href="emergency.html">Send Alert →</a>
+            </div>
+
+            <div class="card">
+                <h3>🗺️ Live Donor Map</h3>
+                <p>See active donors on a map</p>
+                <a href="map.html">View Map →</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

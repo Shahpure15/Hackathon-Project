@@ -1,0 +1,81 @@
+.role-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.role-selection-container h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.role-description {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.role-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.role-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #ffffff;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.role-icon {
+  font-size: 3rem;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.candidate-card {
+  background-color: #e8f7ff;
+}
+
+.candidate-card:hover {
+  background-color: #d0efff;
+}
+
+.recruiter-card {
+  background-color: #fef6e4;
+}
+
+.recruiter-card:hover {
+  background-color: #fdeac1;
+}
+
+.role-card h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.role-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  text-align: center;
+}

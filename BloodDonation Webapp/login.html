@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/login.css">
+  <title>Login | BloodAid</title>
+</head>
+<body>
+  <div class="main-container">
+    <section class="image">
+      <div class="image-container">
+        <img id="img" src="images/img1.jpg">
+      </div>
+    </section>
+
+    <section class="container forms">
+      <div class="form login">
+        <div class="form-content">
+          <header>Login to BloodAid</header>
+          <form action="#">
+            <div class="field input-field">
+              <input type="email" placeholder="Email" class="input">
+            </div>
+            <div class="field input-field">
+              <input type="password" placeholder="Password" class="password">
+              <i class='bx bx-hide eye-icon'></i>
+            </div>
+            <div class="field button-field">
+              <button>Login</button>
+            </div>
+          </form>
+
+          <div class="social-login">
+            <a href="http://127.0.0.1:5000/login" class="google-btn">
+              <img src="images/google.svg" alt="Google Sign-In" class="google-icon"> Sign in with Google
+            </a>
+            <a href="#" class="linkedin-btn">
+              <img src="images/linkedin.svg" alt="LinkedIn Sign-In" class="linkedin-icon"> Sign in with LinkedIn
+            </a>
+          </div>
+          
+
+          <div class="form-link">
+            <span>Don't have an account? <a href="signup.html" class="link signup-link">Signup</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="scripts/login.js"></script>
+</body>
+</html>

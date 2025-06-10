@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Center the signup box */
+    align-items: center;
+    height: 100vh;
+    background: url('images/blood-background.jpeg') no-repeat center center/cover;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px; /* Increase padding for a bigger box */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* Increase max-width for a bigger box */
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.signup {
+    background: none; /* Remove background to avoid double border */
+    padding: 0; /* Remove padding to avoid double border */
+    border-radius: 10px;
+    box-shadow: none; /* Remove box-shadow to avoid double border */
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-field input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-field button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-field button:hover {
+    background: #e03e4e;
+}
+
+.form-link {
+    text-align: center;
+}
+
+.form-link a {
+    color: #ff4757;
+    text-decoration: none;
+}
+
+.form-link a:hover {
+    text-decoration: underline;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

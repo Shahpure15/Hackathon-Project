@@ -1,0 +1,30 @@
+<!-- filepath: /D:/BloodDonation Webapp/donors.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Blood Donor - BloodAid</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/donors.css">
+    <script src="scripts/sidebar.js" defer></script>
+    <script src="scripts/donors.js" defer></script>
+</head>
+<body>
+    <div id="sidebar-container"></div>
+
+    <main class="content">
+        <h1>Find a Blood Donor</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Enter location" class="search-input">
+            <button class="search-button">Search</button>
+        </div>
+        <div id="map"></div>
+        <div class="results">
+            <p>No results yet...(Search a Location to view on the map)</p>
+        </div>
+    </main>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiTcHAcC4JxHxWjznk9z1vhmTr19j2MQE&callback=initMap" defer></script>
+</body>
+</html>

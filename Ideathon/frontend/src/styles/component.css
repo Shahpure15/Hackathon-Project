@@ -1,0 +1,147 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2c3e50;
+    color: #fff;
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-button, .nav-button:link, .nav-button:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #1f2e3d;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #1a73e8, #4285f4);
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  /* Scanner Section */
+  .scanner-container {
+    margin-top: 40px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+  }
+  
+  .url-input {
+    flex: 1;
+    max-width: 500px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .url-input:focus {
+    border-color: #1a73e8;
+  }
+  
+  .scan-button {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .scan-button:hover {
+    background: #1c6690;
+  }
+  
+  .scan-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Results Card */
+  .results-card, .results-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #eef5ff;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .results-card h2, .results-section h2 {
+    color: #2980b9;
+    margin-top: 0;
+  }
+  
+  .vulnerability-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .vulnerability-list li {
+    background-color: #fff3cd;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  /* Risk Meter */
+  .risk-meter {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .risk-bar {
+    height: 12px;
+    border-radius: 6px;
+    margin-top: 5px;
+  }
+  

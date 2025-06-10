@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Map</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <h1>Nearby Blood Banks</h1>
+    <div id="map" style="width:100%;height:500px;"></div>
+    <script>
+        function initMap() {
+            var location = {lat: 28.7041, lng: 77.1025};
+            var map = new google.maps.Map(document.getElementById('map'), { zoom: 10, center: location });
+            new google.maps.Marker({ position: location, map: map });
+        }
+    </script>
+</body>
+</html>

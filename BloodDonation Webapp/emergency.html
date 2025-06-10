@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Blood Request - BloodAid</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/emergency.css">
+    <script src="scripts/sidebar.js" defer></script>
+</head>
+<body>
+    <div id="sidebar-container"></div>
+
+   
+    <main class="content">
+        <h1>🚨 Emergency Blood Request</h1>
+        <form class="emergency-form">
+            <label for="blood-group">Blood Group Needed</label>
+            <select id="blood-group">
+                <option>A+</option>
+                <option>B+</option>
+                <option>O+</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>A-</option>
+                <option>B-</option>
+                <option>O-</option>
+            </select>
+            <label for="location">Hospital/Location</label>
+            <input type="text" id="location" placeholder="Enter hospital">
+            <button type="submit">Send Alert</button>
+        </form>
+    </main>
+</body>
+</html>
